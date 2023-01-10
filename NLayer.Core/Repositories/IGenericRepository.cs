@@ -9,7 +9,7 @@ namespace NLayer.Core.Repositories
         IQueryable<T> Where(Expression<Func<T, bool>> expression);
 
         //Get all metodu. Order by vesaire kullanıp ondan sonra ToList ile veri tabanına atabileceğimiz için Iquaryable olarak yazdık.
-        IQueryable<T> GetAll(Expression<Func<T, bool>> expression);
+        IQueryable<T> GetAll();
 
         //Any metodu
         Task<bool> AnyAsync(Expression<Func<T, bool>> expression);

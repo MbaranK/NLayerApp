@@ -10,6 +10,6 @@ namespace NLayer.Core
     {
         public string Name { get; set; }
 
-        public ICollection<Product> Products { get; set; } // bir kategorinin birden fazla kategorisi olabileceğini söylüyoruz. Bire çok ilişki
+        public ICollection<Product> Products { get; set; } // bir kategorinin birden fazla kategorisi olabileceği için bu şekilde yazdık. Bire çok ilişki
     }
 }
